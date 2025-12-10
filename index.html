@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>My Awesome Gallery</h1>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="fantasy">Fantasy</button>
+            <button class="filter-btn" data-filter="gaming">Gaming</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="fantasy">
+                <img src="images/img1.jpg" alt="Fantasy Art">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item" data-category="gaming">
+                <img src="images/img2.jpg" alt="Cartoon Character">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item" data-category="fantasy">
+                <img src="images/img3.jpg" alt="Archer">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item" data-category="fantasy">
+                <img src="images/img4.jpg" alt="Demon Girl">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item" data-category="gaming">
+                <img src="images/img5.jpg" alt="Dark Souls">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item" data-category="fantasy">
+                <img src="images/img6.jpg" alt="Robot Throne">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item" data-category="other">
+                <img src="images/img7.jpg" alt="Stone Tool">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+            <div class="gallery-item" data-category="gaming">
+                <img src="images/img8.jpg" alt="Animal Crossing">
+                <div class="overlay"><i class="fas fa-search-plus"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+        <img src="" alt="Lightbox Image" class="lightbox-img">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
